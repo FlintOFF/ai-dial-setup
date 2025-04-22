@@ -1,0 +1,9 @@
+include:
+  - path: ../common.yml
+    env_file: ./.env
+
+services:
+  adapter-openai:
+    image: epam/ai-dial-adapter-openai:0.24.0
+    environment:
+      WEB_CONCURRENCY: "3"
